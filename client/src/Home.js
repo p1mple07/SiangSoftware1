@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import ProjectSlider from "./Components/ProjectSlider/ProjectSlider";
 
-function Home() {
+function Home({projects}) {
     useEffect(() => {
         const getUserinfo = async() => {
             try{
@@ -27,6 +28,7 @@ function Home() {
             This sample app demonstrates how to use the Microsoft Authentication Library for React to sign in and sign out users.
             {localStorage.getItem("authToken")};
         </p>
+        <ProjectSlider projects={projects}/>
         </div>
     );
     }

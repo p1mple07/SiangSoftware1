@@ -7,10 +7,10 @@ const ProjectAccordian = (project) => {
         <input type="checkbox" name="accordian" id="first" />
         <label for="first" class="contentHead">
           {" "}
-          Discription
+          Description
         </label>
         <div class="content">
-          <p>{project.Discription}</p>
+          <p>{project.Description}</p>
         </div>
       </li>
       <li class="accordianHeading">

@@ -1,5 +1,4 @@
-
-import AllProjects from "./AllProjects";
+import AllProjects from "./AllProject";
 import * as React from 'react';
 import { Button } from "@mui/material";
 import Autocomplete from '@mui/material/Autocomplete';

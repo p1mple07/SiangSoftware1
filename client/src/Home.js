@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import ProjectSlider from "./Components/ProjectSlider/ProjectSlider";
 import TopContributors from "./Components/TopContributors/TopContributors";
+import ProjectCard from "./Pages/Projects/ProjectCard";
+import "./Home.css"
 
 function Home({projects}) {
     useEffect(() => {
@@ -24,13 +26,18 @@ function Home({projects}) {
     }, [])
     return (
         <div>
-        <h1>Welcome to the Microsoft Authentication Library For React Tutorial</h1>
         <p>
-            This sample app demonstrates how to use the Microsoft Authentication Library for React to sign in and sign out users.
             {localStorage.getItem("authToken")};
         </p>
-        <ProjectSlider projects={projects}/>
-        <TopContributors></TopContributors>
+        <div className="flex-container">
+            {projects.map((item,index) => (
+                    <ProjectCard key = {index} project = {item} className="projectCard"></ProjectCard>
+                    
+                ))
+            }
+        </div>
+        {/* <ProjectSlider projects={projects}/>
+        <TopContributors></TopContributors> */}
         </div>
     );
     }

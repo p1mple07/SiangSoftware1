@@ -3,6 +3,8 @@ import ProjectSlider from "./Components/ProjectSlider/ProjectSlider";
 import TopContributors from "./Components/TopContributors/TopContributors";
 import ProjectCard from "./Pages/Projects/ProjectCard";
 import "./Home.css"
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Feed from "./Components/Feed/Feed";
 
 function Home({projects}) {
     useEffect(() => {
@@ -25,20 +27,11 @@ function Home({projects}) {
         getUserinfo();
     }, [])
     return (
-        <div>
-        <p>
-            {localStorage.getItem("authToken")};
-        </p>
-        <div className="flex-container">
-            {projects.map((item,index) => (
-                    <ProjectCard key = {index} project = {item} className="projectCard"></ProjectCard>
-                    
-                ))
-            }
+        <div className="home_body">
+            <Sidebar/>
+            <Feed/>
         </div>
-        {/* <ProjectSlider projects={projects}/>
-        <TopContributors></TopContributors> */}
-        </div>
+        
     );
     }
 

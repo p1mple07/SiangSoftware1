@@ -26,7 +26,7 @@
   
   .projectCard {
     flex: 0 0 auto; /* Make each card have a fixed width */
-    margin-right: 20px; /* Add margin between cards */
+    margin-right: 20px; 
     transition: transform 300ms ease-in-out; /* Apply hover effect */
   }
   

@@ -8,7 +8,7 @@ import './Project.css'
 
 export default function ProjectCard({project}) {
   return (
-    <Card sx={{maxWidth: 345}} className='projectCard'>
+    <Card sx={{maxWidth: 345}} className={`projectCard ${project.customClass}`}>
       <CardActionArea>
         <CardMedia
           component="img"

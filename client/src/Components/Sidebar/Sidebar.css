@@ -1,8 +1,8 @@
 .sidebar {
-    display: flex;
-    flex: 0.30;
+    /* display: flex; */
+    flex: 0.20;
     flex-direction: column;
-    margin-left: 20%; /* Use margin-left instead of left */
+    
 }
 
 
@@ -41,7 +41,7 @@ overflow: hidden;
    margin:10px 0px;
    border-radius: 10px;
    position: sticky;
-   top:60px;
+   top:30px;
 }
 
 .sidebar_recent p{

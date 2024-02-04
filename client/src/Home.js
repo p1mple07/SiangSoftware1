@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import ProjectSlider from "./Components/ProjectSlider/ProjectSlider";
+import TopContributors from "./Components/TopContributors/TopContributors";
 
 function Home({projects}) {
     useEffect(() => {
@@ -29,6 +30,7 @@ function Home({projects}) {
             {localStorage.getItem("authToken")};
         </p>
         <ProjectSlider projects={projects}/>
+        <TopContributors></TopContributors>
         </div>
     );
     }

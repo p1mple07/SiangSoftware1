@@ -1,0 +1,73 @@
+.roundbox {
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    float: right; /* Add this line to float the box to the right */
+  }
+  
+  .sidebox {
+    margin: 16px;
+  }
+  
+  .top-contributed {
+    border-top: 2px solid #ddd;
+  }
+  
+  .borderTopRound {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .caption {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .titled {
+    margin-bottom: 8px;
+  }
+  
+  .rtable {
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: collapse;
+  }
+  
+  .rtable th,
+  .rtable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .rtable th {
+    background-color: #f2f2f2;
+  }
+  
+  .dark {
+    background-color: #ddd;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .bottom-links {
+    margin-top: 16px;
+    text-align: left;
+  }
+  
+  .bottom-links a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .bottom-links a:hover {
+    text-decoration: underline;
+  }
+  

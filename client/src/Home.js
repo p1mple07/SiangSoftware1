@@ -28,9 +28,9 @@ function Home({projects}) {
     }, [])
     return (
         <div className="home_body">
-            <Sidebar className =  "sidebar"/>
-            <Feed className = "feed" projects = {projects}/>
             <TopContributors className = "TopContributors"></TopContributors>
+            <Feed className = "feed" projects = {projects}/>
+            <Sidebar className =  "sidebar"/>
         </div>
         
     );
